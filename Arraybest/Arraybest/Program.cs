@@ -12,6 +12,9 @@ namespace Arraybest
         {
             string[] array = new string[3] {"кот", "собака", "попугай"};
             array[2] = "хомяк";
+            Console.WriteLine(array[0]);
+            Console.WriteLine(array[1]);
+            Console.WriteLine(array[2]);
         }
     }
 }
