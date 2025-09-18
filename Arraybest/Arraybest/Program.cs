@@ -15,6 +15,32 @@ namespace Arraybest
             Console.WriteLine(array[0]);
             Console.WriteLine(array[1]);
             Console.WriteLine(array[2]);
+
+            string[] a = new string[3];
+            a[0] = array[2];
+            a[1] = array[1];
+            a[2] = array[0];
+            Console.WriteLine(a[0]);
+            Console.WriteLine(a[1]);
+            Console.WriteLine(a[2]);
+
+            int[] c = new int[10000] ;
+
+            for (int i = 0; i < c.Length; i++)
+            {
+                c[i] = 1 + i;
+
+            }
+            Console.Write("[");
+            for (int i = 0; i < c.Length -1; i++)
+            {
+                
+                    Console.Write(c[i]  + ",");
+            }
+            Console.Write(c.Length + "]");
+            
+
+
         }
     }
 }
