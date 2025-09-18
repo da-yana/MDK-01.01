@@ -28,7 +28,7 @@ namespace Arraybest
 
             for (int i = 0; i < c.Length; i++)
             {
-                c[i] = 1 + i;
+                c[i] = (i+1)*2;
 
             }
             Console.Write("[");
@@ -37,7 +37,9 @@ namespace Arraybest
                 
                     Console.Write(c[i]  + ",");
             }
-            Console.Write(c.Length + "]");
+            Console.Write(c.Length*2);
+            Console.Write( "]");
+
             
 
 
