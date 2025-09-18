@@ -10,6 +10,8 @@ namespace Arraybest
     {
         static void Main(string[] args)
         {
+            string[] array = new string[3] {"кот", "собака", "попугай"};
+            
         }
     }
 }
