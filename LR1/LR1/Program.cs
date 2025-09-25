@@ -33,6 +33,8 @@ namespace LR1
                     ++count;
                 }
             }
+            Console.WriteLine($"Среднее значение массива: {average}");
+            Console.WriteLine($"Количество элементов, меньших среднего значения: {count} ");
         }
     }
 }
