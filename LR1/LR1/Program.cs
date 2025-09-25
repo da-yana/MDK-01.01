@@ -18,7 +18,14 @@ namespace LR1
                 Console.Write($"Элемент [{index}]: ");
                 Array[index] = Convert.ToInt32(Console.ReadLine());
             }
-
+            int sum = 0;
+            double average = 0.0;
+            int count = 0;
+            foreach (int element in Array)
+            {
+                sum += element;
+            }
+            average = sum / Lenght;
         }
     }
 }
