@@ -26,6 +26,13 @@ namespace LR1
                 sum += element;
             }
             average = sum / Lenght;
+            foreach (int element in Array)
+            {
+                if (element < average)
+                {
+                    ++count;
+                }
+            }
         }
     }
 }
