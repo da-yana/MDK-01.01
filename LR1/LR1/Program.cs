@@ -13,7 +13,11 @@ namespace LR1
             Console.WriteLine("Введите количество элементов массива: ");
             int Lenght=Convert.ToInt32(Console.ReadLine());
             int[] Array = new int[Lenght];
-            
+            for(int index = 0; index < Lenght; index++)
+            {
+                Console.Write($"Элемент [{index}]: ");
+                Array[index] = Convert.ToInt32(Console.ReadLine());
+            }
 
         }
     }
