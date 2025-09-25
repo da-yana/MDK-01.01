@@ -12,6 +12,11 @@ namespace LR2
         {
             int[] Array = new int[1990];
             int n = 10;
+            for(int i = 0; i < 1990; i++)
+            {
+                Array[i] = n;
+                ++n;
+            }
         }
     }
 }
