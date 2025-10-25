@@ -12,11 +12,11 @@ namespace Dictionaru
         static void Main(string[] args)
         {
             Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
-            dictionary.Add("cat", new List<string>() { "Black", "white", "blue"});
-            dictionary.Add("dog", new List<string>() {"Brown", "yellow" });
-            dictionary.Add("bear", new List<string>() {"Dark brown" });
+            dictionary.Add("кошка", new List<string>() { "Вслоухая", "Сфинкс", "Русская голубая" });
+            dictionary.Add("собаки", new List<string>() { "Дворовая", "Чихуахуаа" });
+            dictionary.Add("медведи", new List<string>() { "Бурый" });
 
         }
-        
+
     }
 }
