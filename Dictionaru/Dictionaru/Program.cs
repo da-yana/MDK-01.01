@@ -18,11 +18,14 @@ namespace Dictionaru
 
           
             
-                Console.Write(string.Join(" , ", dictionary.Keys)); 
+                Console.Write(string.Join(" , ", dictionary.Keys));
+            Console.WriteLine();
             
 
+            Console.Write(string.Join(" , ", dictionary["кошка"]));
 
         }
+        
 
     }
 }
