@@ -16,6 +16,12 @@ namespace Dictionaru
             dictionary.Add("собаки", new List<string>() { "Дворовая", "Чихуахуаа" });
             dictionary.Add("медведи", new List<string>() { "Бурый" });
 
+          
+            
+                Console.Write(string.Join(" , ", dictionary.Keys)); 
+            
+
+
         }
 
     }
