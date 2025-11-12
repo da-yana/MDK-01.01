@@ -26,6 +26,9 @@ namespace Task_1
                 sum += i.Quantity * i.Price;
             }
             Console.WriteLine($"Общая сумма проданных телефонов за весь период: " + sum);
+
+            int maxQuantity = 0;
+            string popularFhone = "";
         }
     }
 }
