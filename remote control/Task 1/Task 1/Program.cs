@@ -20,6 +20,7 @@ namespace Task_1
                (new DateTime(2025, 11, 11), "iPhone 17 Pro Max", 9, 173000),
                (new DateTime(2025, 11, 12), "Tecno CAMON 40", 3, 17500),
             };
+            int sum = 0;
         }
     }
 }
