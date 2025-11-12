@@ -34,6 +34,7 @@ namespace Task_1
                 if (sale[f].Quantity > maxQuantity)
                 {
                     maxQuantity = sale[f].Quantity;
+                    popularFhone = sale[f].Model;
                 }
             }
         }
