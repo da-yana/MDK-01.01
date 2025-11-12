@@ -37,6 +37,7 @@ namespace Task_1
                     popularFhone = sale[f].Model;
                 }
             }
+            Console.WriteLine("Самый продаваемый телефон: " + popularFhone);
         }
     }
 }
