@@ -29,6 +29,9 @@ namespace Task_1
 
             int maxQuantity = 0;
             string popularFhone = "";
+            for (int f = 0; f < sale.Length; f++)
+            {
+            }
         }
     }
 }
