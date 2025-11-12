@@ -10,7 +10,7 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            var sale = new (DateTime, string, int, int)[]
+            var sale = new (DateTime Data, string Model, int Quantity, int Price)[]
             {
                (new DateTime(2025, 11, 9), "iPhone 17", 7, 110000),
                (new DateTime(2025, 11, 9), "Xiaomi Redmi Note 14", 5, 16200),
