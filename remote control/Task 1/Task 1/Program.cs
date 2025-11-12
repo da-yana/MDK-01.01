@@ -31,6 +31,10 @@ namespace Task_1
             string popularFhone = "";
             for (int f = 0; f < sale.Length; f++)
             {
+                if (sale[f].Quantity > maxQuantity)
+                {
+
+                }
             }
         }
     }
