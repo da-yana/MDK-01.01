@@ -43,6 +43,7 @@ namespace task_1._1
         {
             decimal regularSalary = hourlyRate_ * regularHours_;
             decimal overtimeRate = hourlyRate_ * 1.5m;
+            decimal overtimeSalary = overtimeRate * overtimeHours_;
         }
     }
 }
