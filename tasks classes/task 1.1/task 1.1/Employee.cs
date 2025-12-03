@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tasks_classes
+namespace task_1._1
 {
-    internal class Program
+    internal class Employee
     {
-        static void Main(string[] args)
-        {
-        }
+        public int Id_;
+        public string FullName_;
+        public string email_;
+
     }
 }
