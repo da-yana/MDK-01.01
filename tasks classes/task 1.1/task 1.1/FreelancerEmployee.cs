@@ -31,6 +31,7 @@ namespace task_1._1
         public override decimal CalculateSalary()
         {
             decimal taxAmount = projectPayment_ * taxRate_;
+            decimal netSalary = projectPayment_ - taxAmount;
         }
     }
 }
