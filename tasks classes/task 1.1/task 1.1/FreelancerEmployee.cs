@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task_1._1
 {
-    internal class FreelancerEmployee : FreelancerEmployee
+    internal class FreelancerEmployee : Employee
     {
         private decimal projectPayment_;
         private decimal taxRate_;
@@ -32,6 +32,7 @@ namespace task_1._1
         {
             decimal taxAmount = projectPayment_ * taxRate_;
             decimal netSalary = projectPayment_ - taxAmount;
+            return netSalary;
         }
     }
 }
