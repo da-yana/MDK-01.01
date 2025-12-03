@@ -42,7 +42,7 @@ namespace task_1._1
         public override decimal CalculateSalary()
         {
             decimal regularSalary = hourlyRate_ * regularHours_;
-           
+            decimal overtimeRate = hourlyRate_ * 1.5m;
         }
     }
 }
