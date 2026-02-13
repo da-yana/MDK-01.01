@@ -8,5 +8,6 @@ namespace ModelViewLib
 {
     public class Class1
     {
+
     }
 }
