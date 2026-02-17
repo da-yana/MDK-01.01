@@ -1,28 +1,25 @@
 ﻿using ModelViewLib.ModelViews;
 using ModelViewLib.Views;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Class_Library
 {
     public class UsersTableView : DataGridView, IUsersView
     {
+        public List<User> GetSelectedUsers()
+        {
+            List <User> result = new List<User>();
+            foreach (DataGridViewRow row in SelectedRows) 
+            {
+             result.Add(row.DataBoundItem as User); 
+            }
+            return result; 
+        }
         public void ShowUsers(List<User> users)
         {
+            DataSource = null;
             DataSource = users;
-        }
-        public List <User> GetSelectedUsers()
-        {
-            List<User> result = new List<User>();
-            foreach(var row in SelectedRows)
-            {
-                result.Add(row as User);
-            }
-            return result;
         }
        
     }

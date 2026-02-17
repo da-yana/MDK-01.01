@@ -11,7 +11,8 @@ namespace ModelViewLib.Model
     public interface IUsersModel
     {
           List<User> UpUserData();
-          bool Register (User user); 
-
+          bool Register (User user);
+        void RemoveUsers(List<User> users);
+        List<User> Load();
     }
 }

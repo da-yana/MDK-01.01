@@ -17,21 +17,22 @@ namespace Class_Library
     public partial class MainForm : Form
     {
         IUsersModel model_ = new MemoryUsersModel();
-        UserPresenter presenter_;
+        private UserPresenter presenter_;
         public MainForm()
         {
             InitializeComponent();
-            presenter_ = new UserPresenter(model_, view);
-            UsersTableView tableView = new UsersTableView();
-            Controls.Add(tableView);
-            tableView.Dock = DockStyle.Top;
-            this.Controls.Add(this.toolStrip1);
-            UserPresenter user = new UserPresenter(new MemoryUsersModel(), tableView);
+            presenter_ = new UserPresenter(new MemoryUsersModel(), UsersView);
         }
 
         private void DeleteToolStripButton_Click(object sender, EventArgs e)
         {
-            List<User> selectedUser = view.GetSelectedUsers();
+            if (MessageBox.Show("Вы хотите удалить пользователя?", "Внимание!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) 
+                == DialogResult.Yes)
+            {
+                List<User> selectedUsers = UsersView.GetSelectedUsers();
+                presenter_.RemoveUsers(selectedUsers);
+            }
+            
         }
     }
 }
