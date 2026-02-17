@@ -29,7 +29,7 @@ namespace Class_Library
             if (MessageBox.Show("Вы хотите удалить пользователя?", "Внимание!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) 
                 == DialogResult.Yes)
             {
-                List<User> selectedUsers = UsersView.GetSelectedUsers();
+               List<User> selectedUsers = UsersView.GetSelectedUsers();
                 presenter_.RemoveUsers(selectedUsers);
             }
             

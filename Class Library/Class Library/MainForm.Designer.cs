@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.DeleteToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.UsersView = new Class_Library.UsersTableView();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersView)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -56,16 +58,27 @@
             this.DeleteToolStripButton.ToolTipText = "Удалить";
             this.DeleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripButton_Click);
             // 
+            // UsersView
+            // 
+            this.UsersView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsersView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UsersView.Location = new System.Drawing.Point(0, 35);
+            this.UsersView.Name = "UsersView";
+            this.UsersView.Size = new System.Drawing.Size(644, 150);
+            this.UsersView.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 321);
+            this.Controls.Add(this.UsersView);
             this.Controls.Add(this.toolStrip1);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,6 +88,7 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton DeleteToolStripButton;
+        private UsersTableView UsersView;
     }
 }
 
