@@ -17,6 +17,7 @@ namespace ModelViewLib.Model
             allUsers_.Add(new User { Login = "def", Password = "456", Name = "Sergo"});
             allUsers_.Add(new User { Login = "ghi", Password = "789", Name = "Temchik"});
         }
+
         public List<User> Load()
         {
             return allUsers_;

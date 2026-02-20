@@ -32,7 +32,11 @@ namespace Class_Library
                List<User> selectedUsers = UsersView.GetSelectedUsers();
                 presenter_.RemoveUsers(selectedUsers);
             }
-            
+
+        }
+        private void AddToolStripButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
