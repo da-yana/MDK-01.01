@@ -64,6 +64,7 @@
             this.UsersView.Dock = System.Windows.Forms.DockStyle.Top;
             this.UsersView.Location = new System.Drawing.Point(0, 35);
             this.UsersView.Name = "UsersView";
+            this.UsersView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UsersView.Size = new System.Drawing.Size(644, 150);
             this.UsersView.TabIndex = 1;
             // 

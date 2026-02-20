@@ -17,7 +17,7 @@ namespace ModelViewLib.Presenters
         public UserPresenter(IUsersModel model, IUsersView view)
         {
             model_ = model;
-            view_ = view;
+            view_ = view;   
             view_.ShowUsers(model_.Load());
         }
 
