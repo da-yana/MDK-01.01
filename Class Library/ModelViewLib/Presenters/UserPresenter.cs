@@ -26,5 +26,14 @@ namespace ModelViewLib.Presenters
             model_.RemoveUsers(users);
             view_.ShowUsers(model_.Load());
         }
+        public void AddUser(User user) 
+        {
+            model_.AddUser(user);   
+            view_.ShowUsers(model_.Load()); 
+        }
+        public IUsersModel GetModel() 
+        {
+            return model_;
+        }
     }
 }

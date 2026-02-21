@@ -36,7 +36,12 @@ namespace Class_Library
         }
         private void AddToolStripButton_Click(object sender, EventArgs e)
         {
-
+            AddForm addUser = new AddForm(model_);
+            if (addUser.ShowDialog() == DialogResult.Yes)
+            {
+                presenter_.AddUser(addUser.user);
+            }
         }
+
     }
 }

@@ -13,9 +13,9 @@ namespace ModelViewLib.Model
         List<User> allUsers_ = new List<User>();
         public MemoryUsersModel() 
         {
-          allUsers_.Add(new User { Login = "abc", Password = "123", Name = "Vasiliy"});
-            allUsers_.Add(new User { Login = "def", Password = "456", Name = "Sergo"});
-            allUsers_.Add(new User { Login = "ghi", Password = "789", Name = "Temchik"});
+          allUsers_.Add(new User("qwe", "123", "Bars"));
+            allUsers_.Add(new User("zxc", "456", "Vadim"));
+            allUsers_.Add(new User("asd", "789", "Diana"));
         }
 
         public List<User> Load()
@@ -56,6 +56,19 @@ namespace ModelViewLib.Model
         public List<User> UpUserData()
         {
             return allUsers_;
+        }
+        public bool AddUser(User user)
+        {
+            foreach (User u in allUsers_) 
+            {
+                if (u.Login == user.Login)
+                {
+                    return false;
+                }
+
+            }
+            allUsers_.Add (user);
+            return true;    
         }
     }
 }

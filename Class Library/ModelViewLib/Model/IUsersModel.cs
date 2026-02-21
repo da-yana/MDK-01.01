@@ -14,5 +14,6 @@ namespace ModelViewLib.Model
           bool Register (User user);
         void RemoveUsers(List<User> users);
         List<User> Load();
+        bool AddUser (User u);
     }
 }

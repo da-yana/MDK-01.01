@@ -40,8 +40,8 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.DeleteToolStripButton,
-            this.AddToolStripButton});
+            this.AddToolStripButton,
+            this.DeleteToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(644, 35);
@@ -75,6 +75,7 @@
             // 
             this.UsersView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsersView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UsersView.GridColor = System.Drawing.Color.CadetBlue;
             this.UsersView.Location = new System.Drawing.Point(0, 35);
             this.UsersView.Name = "UsersView";
             this.UsersView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -85,11 +86,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(644, 321);
             this.Controls.Add(this.UsersView);
             this.Controls.Add(this.toolStrip1);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Пользователи";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsersView)).EndInit();
