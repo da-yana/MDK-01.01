@@ -14,15 +14,25 @@ namespace DBWinform
 {
     public partial class Form1 : Form
     {
-       List<string> info = new List<string>();
+        PGUsersLoader loader = new PGUsersLoader();
+        List<string> info = new List<string>();
 
         public Form1()
         {
             InitializeComponent();
-            PGUsersLoader loader = new PGUsersLoader();
+            dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             List<Users> users = loader.Load();
             dataGridView.DataSource = users;
         }
-       
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dataGridView.SelectedRows[0];
+            Users user = row.DataBoundItem as Users;
+            loader.DeleteSelectUser(user.Login);
+
+
+
+        }
     }
 }
