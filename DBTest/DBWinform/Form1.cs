@@ -28,7 +28,7 @@ namespace DBWinform
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Вы действительно хотите удалить эту запись?", "Внимамние", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Вы действительно хотите удалить эту запись?", "Внимамние!", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 DataGridViewRow row = dataGridView.SelectedRows[0];
@@ -38,7 +38,7 @@ namespace DBWinform
         }
         private void clearButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Вы действительно хотите удалить все записи?", "Внимамние", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Вы действительно хотите удалить все записи?", "Внимамние!", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 loader.ClearAllUsers();
