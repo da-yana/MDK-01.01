@@ -80,7 +80,7 @@ namespace TestFileStorage
             }
             catch (NpgsqlException exception)
             {
-                MessageBox.Show($"Ошибка: {exception.Message}");
+                MessageBox.Show($"Ошибка!: {exception.Message}");
                 return false;
             }
 
