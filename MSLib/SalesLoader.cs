@@ -9,23 +9,25 @@ namespace MSLib
 {
     public class SalesLoader
     {
-        List <Product> Sales = new List <Product> ();
-        public List <Product> Load (string path)
+        private List<Product> products_ = new List<Product>();
+
+        public List<Product> ReadAllFromFile()
         {
-            List <Product> products = new List<Product> ();
-            StreamReader reader = new StreamReader (path);  
-            reader.ReadLine ();
-            string line; 
-            while ((line = reader.ReadLine ()) != null)
+            string path = @".\MSTest.txt";
+            StreamReader info = new StreamReader(path);
+            string line;
+            while ((line = info.ReadLine()) != null)
             {
-                string[] ProductInf = line.Split (' ');
-                string name_ = ProductInf[0];
-                int price = Convert.ToInt32(ProductInf[1]);
-                int quantity = Convert.ToInt32(ProductInf[2]);
-                Product product = new Product (name_, price, quantity);
-                Sales.Add(product); 
+                string[] lines = line.Split(';');
+                products_.Add(new Product
+                {
+                    Name = lines[0],
+                    Price = Convert.ToInt32(lines[1]),
+                    Quantity = Convert.ToInt32(lines[2])
+                });
             }
-            return Sales;
+            info.Close();
+            return products_;
         }
     }
 }
