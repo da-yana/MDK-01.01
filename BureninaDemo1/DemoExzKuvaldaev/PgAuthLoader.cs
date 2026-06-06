@@ -48,7 +48,7 @@ namespace BureninaDemo1
             {
                 MessageBox.Show($"Ошибка авторизации: {exception.Message}");
                 return null;
-            }
+            } 
         }
     }
 }
